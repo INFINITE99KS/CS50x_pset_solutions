@@ -1,0 +1,5 @@
+I would calculate the audio aura by calculating the average energy, valence, and danceability of their songs.
+Because a person's mode differs from time to time, as well as the fact that playlists are often a mix of genres and don't really follow a particular criteria,
+unless the person is very picky about what they listen to, or got separate playlits for separate moods.
+I would recommend breaking down that "aura" to monthly rather than yearily as that would give us a better insight onto their mood and how
+it fluctuates across the year.

@@ -1,0 +1,178 @@
+.navbar_color {
+    background-color: #faf0d7;
+}
+
+.navbar
+{
+    box-shadow: 0 4px 12px rgba(186, 167, 115, 0.7);
+}
+
+.scale_logo
+{
+    transition: transform 0.3s ease-in-out;
+}
+
+.scale_logo:hover
+{
+    transform: scale(1.05);
+}
+
+.scroll {
+  background-color: rgba(255, 255, 255, 0.9); /* soft white bg, change if needed */
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 2px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+  backdrop-filter: blur(4px); /* optional glassy effect */
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #96885f;
+  border-radius: 4px;
+}
+
+
+.glow_on_hover
+{
+    transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.glow_on_hover:hover
+{
+    transform: scale(1.01);
+    text-shadow: 0 0 15px #96885f;
+}
+
+#hiddenParagraph{
+  font-size: small;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.colored
+{
+  background-color: #faf0d7;
+  box-shadow: 0 4px 12px rgba(186, 167, 115, 0.7);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.centered_in_page
+{
+  animation: fadeIn 0.5s ease-in;
+  padding: 20px;
+  border-radius: 5px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('pics/boats.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* optional */
+  min-height: 100vh;
+  font-family: 'Raleway', sans-serif; /* just in case you wanna keep your font */
+}
+
+.boardgame {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  justify-content: center; /* centers the grid horizontally */
+  align-items: center;
+  margin: 20px auto; /* additional horizontal centering */
+  width: max-content;
+}
+
+#playerturn {
+  text-align: center;
+  font-size: 1.5rem; /* optional, for better visibility */
+  margin-top: 20px;  /* tweak as needed */
+}
+
+.cell {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fffdf5;
+}
+
+.cell:hover
+{
+  transform: scale(1.03);
+  background-color: #fcf3e3;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* darkens everything behind */
+  backdrop-filter: blur(2px); /* optional blur */
+  min-height: 100vh;
+  height: auto+60px;
+  width: 100%;
+  padding-top: 60px;
+}
+
+
+.text-container {
+    transform: translateY(-40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* adjust for the height of your navbar */
+}
+
+.text {
+    animation: fadeIn 0.5s ease-in;
+    color: white; /* or any color that contrasts with your background */
+    font-size: 2em; /* adjust as you like */
+    text-align: center;
+}
+
+
+
+.glass-input {
+  background-color: rgba(255, 255, 255, 0.3); /* semi-transparent white */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); /* for Safari */
+}
+
+.glass-input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+#to_be_edited
+{
+  transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(20px);
+}
