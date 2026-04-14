@@ -1,0 +1,11 @@
+sort1 uses: Bubble sorting
+
+How do you know?: Relatively slow rvr time compared to sort 2 and sort 3, along with comparatively fast sorted time.
+
+sort2 uses: Merge sorting.
+
+How do you know?: Fastest in both rvr and sorted.
+
+sort3 uses: Selection sorting
+
+How do you know?: Comparatively slow rvr and sorted times.
